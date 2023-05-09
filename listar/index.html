@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrapCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <scipt src="../js/bootstrapJS/bootstrap.min.js"></scipt>
+    <script src="./listar.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="">
+        <a class="nav-link active" aria-current="page" href="../index.html">Registrar Recluta</a>
+        <a class="nav-link" href="../teams/team.html">Registra Team</a>
+        <a class="nav-link" href="../skill/skill.html">Registar Skill</a>
+        <a class="nav-link" href="../moduloSkill/moduloSkill.html">REgistrar Modulo Skill</a>
+        <a class="nav-link" href="../evaluacion/evaluacion.html">Evaluacion</a>
+        <a class="nav-link" href="index.html">Listar</a>
+    </nav>
+    <div class="card w-50">
+        <h5 class="card-header">Ociones de Filtardo </h5>
+        <div class="card-body">
+            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" id="selectFiltro">
+                <option selected>Seleccione una Opcion</option>
+                <option value="1">Filtara por Equipo </option>
+                <option value="2">Filtar por edad</option>
+                <option value="3">Filtrar por tiempo en el programa</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="equipo card w-50" style="display: none;">
+        <div class="card-body">
+
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="selectE">
+                <option selected>Seleccione el equipo</option>
+
+            </select>
+            <div class="contenedor1">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="edad card w-50" style="display: none;">
+        <div class="card-body">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="selectEdad">
+                <option selected>Seleccione</option>
+                <option value="mayores">Mayores de Edad</option>
+                <option value="menores">Menores de Edad</option>
+
+            </select>
+            
+            <div class="contenedor2">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="tiempo card w-50" style="display: none;">
+
+
+    </div>
+
+</body>
+
+</html>

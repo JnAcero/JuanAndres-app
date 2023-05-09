@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrapCSS/bootstrap.min.css">
+    <scipt src="./js/bootstrapJS/bootstrap.min.js"></scipt>
+    <script src="app.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="">
+        <a class="nav-link active" aria-current="page" href="index.html">Registrar Recluta</a>
+        <a class="nav-link" href="./teams/team.html">Registra Team</a>
+        <a class="nav-link" href="./skill/skill.html">Registar Skill</a>
+        <a class="nav-link" href="./moduloSkill/moduloSkill.html">REgistrar Modulo Skill</a>
+        <a class="nav-link" href="./evaluacion/evaluacion.html">Evaluacion</a>
+        <a class="nav-link" href="./listar/index.html">Listar</a>
+      </nav>
+
+      <div class="card w-50">
+        <div class="card-header">
+          <h5 >Registro de Reclutas</h5>
+        </div>
+        <div class="card-body">
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="NDocument" class="form-label">Numero Documento</label>
+                    <input type="text" class="form-control" id="NDocumentR">
+                  </div>
+                <div class="col-md-6">
+                  <label for="nombres" class="form-label">Nombres</label>
+                  <input type="text" class="form-control" id="nombresR">
+                </div>
+                <div class="col-md-6">
+                  <label for="apellidos" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="apellidosR">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Telefono</label>
+                  <input type="number" class="form-control" id="telefonoR">
+                </div>
+                <div class="col-12">
+                  <label for="direccionR" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="direccionR" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="fechaNacR" class="form-label">Fecha Nacimineto</label>
+                  <input type="date" class="form-control" id="fechaNacR">
+                </div>
+                <div class="col-md-6">
+                    <label for="fechaIngresoR" class="form-label">Fecha Ingreso</label>
+                    <input type="date" class="form-control" id="fechaIngresoR">
+                </div>
+        
+                <div class="col-12">
+                    <label for="idEquipo" class="form-label">Id Equipo</label>
+                    <select id="idEquipo" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 mt-2">
+                  <button  class="btn btn-warning" id="btnregisRecluta">Registar</button>
+                </div>
+              </form>
+        </div>
+      </div>
+      <div class="container">
+        <button id="btnlistarReclutas">Lista de Recultas</button>
+    </div>
+    <table class="table w-50" style="display: none;">
+        <thead>
+          <tr>
+            <th scope="col">N Documentos</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Id Equipo</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+
+    
+    
+</body>
+
+</html>

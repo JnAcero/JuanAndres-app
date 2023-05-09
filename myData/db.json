@@ -1,0 +1,85 @@
+{
+  "reclutas": [
+    {
+      "nDocumento": "1193427712",
+      "nombre": "Juan Andres Acero Burgos",
+      "telefono": "3142968734",
+      "direccion": "calle 19 / 29-45",
+      "fechaNacimineto": "2000-12-01",
+      "fechaIngreso": "2023-05-02",
+      "idEquipo": 3,
+      "id": 1
+    },
+    {
+      "nDocumento": "28054034",
+      "nombre": "Fernando  Acosta",
+      "telefono": "32548623",
+      "direccion": "calle 16 /58-85",
+      "fechaNacimineto": "2003-11-19",
+      "fechaIngreso": "2023-02-14",
+      "idEquipo": 2,
+      "id": 2
+    },
+    {
+      "nDocumento": "25222",
+      "nombre": "Carlos Pardo",
+      "telefono": "3225652",
+      "direccion": "Calle 23-52",
+      "fechaNacimineto": "2012-07-12",
+      "fechaIngreso": "2023-03-08",
+      "idEquipo": 3,
+      "edad": 11,
+      "id": 3
+    },
+    {
+      "nDocumento": "25288",
+      "nombre": "Fabia Beltran",
+      "telefono": "325412",
+      "direccion": "avenida 9 /48",
+      "fechaNacimineto": "2018-06-14",
+      "fechaIngreso": "2023-01-03",
+      "idEquipo": 3,
+      "edad": 5,
+      "id": 4
+    },
+    {
+      "nDocumento": "58935412",
+      "nombre": "Alejandra Mojica",
+      "telefono": "516546546",
+      "direccion": "calle 18/52",
+      "fechaNacimineto": "2005-12-15",
+      "fechaIngreso": "2023-01-03",
+      "idEquipo": 2,
+      "edad": 18,
+      "id": 5
+    }
+  ],
+  "equipos": [
+    {
+      "nombre_equipo": "Artemis",
+      "nombre_trainner": "Edwin Acero",
+      "id": 2
+    },
+    {
+      "nombre_equipo": "Apolo",
+      "nombre_trainner": "Tatiana Paredes",
+      "id": 3
+    },
+    {
+      "nombre_equipo": "Sputnik",
+      "nombre_trainner": "Oscar Giraldo",
+      "id": 4
+    }
+  ],
+  "skills": [
+    {
+      "nameSkill": "CSS avanzado",
+      "id": 1
+    },
+    {
+      "nameSkill": "HTML avanzado",
+      "id": 2
+    }
+  ],
+  "moduloSkill": []
+}
