@@ -70,7 +70,7 @@ function renderReclutas(arreglo, father) {
     arreglo.forEach(ele => {
         const { id, nDocumento, nombre, telefono, direccion, fechaIngreso, idEquipo,edad } = ele;
         template += `
-    <div class="card" style="width: 18rem;">
+    <div class="card w-35" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${nombre}</h5>
