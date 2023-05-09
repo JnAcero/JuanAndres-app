@@ -52,6 +52,17 @@
       "idEquipo": 2,
       "edad": 18,
       "id": 5
+    },
+    {
+      "nDocumento": "2000000",
+      "nombre": "Penelope Castillo",
+      "telefono": "22222222",
+      "direccion": "calle 19 / 29-45",
+      "fechaNacimineto": "2004-10-14",
+      "fechaIngreso": "2023-05-06",
+      "idEquipo": 4,
+      "edad": 19,
+      "id": 6
     }
   ],
   "equipos": [

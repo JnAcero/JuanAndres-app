@@ -6,7 +6,8 @@ const divConteEquipos = document.querySelector('.contenedor1');
 const divEquipos = document.querySelector('.equipo');
 const divEdad = document.querySelector('.edad');
 const divConteEdad = document.querySelector('.contenedor2');
-const selectEdad = document.querySelector('#selectEdad')
+const selectEdad = document.querySelector('#selectEdad');
+const divTiempo = document.querySelector('.tiempo')
 
 selectOptions.addEventListener('change', (e) => {
     let opcion = e.target.value;
@@ -17,7 +18,7 @@ selectOptions.addEventListener('change', (e) => {
         filtrarporEdad();
     }
     else if (opcion == '3') {
-        //filtrarporTiempo();
+        filtrarporTiempo();
     }
 })
 function llenarSelect() {
@@ -128,25 +129,30 @@ function filtrarporEdad() {
                 console.log(error);
             }
         }
-        // let edad = document.querySelector('#edadRecluta').value;
-        // console.log(edad);
-        // console.log(radio.value);
-        // console.log(radioM.value);
-        // try {
-        //     getReclutas()
-        //         .then(reclutas => {
-        //             console.log(reclutas);
-        //             let filtrado = reclutas.filter(recluta => recluta.edad == edad)
-        //             console.log(filtrado);
-        //             if(filtrado.length > 0) {
-        //                 renderReclutas(filtrado, divConteEdad);
-
-        //             }else{
-        //                divConteEdad.innerHTML=`<h5>No hay registros con esta edad</h5>`
-        //             }     
-        //         })
-        // } catch (error) {
-        //     console.log(error);
-        // }
+       
     })
+}
+function filtrarporTiempo(){
+    divEquipos.style.display = 'none';
+    divEdad.style.display = 'none';
+    divTiempo.style.display = 'block';
+    try{
+        getReclutas()
+        .then(reclutas=>{
+            let filtrado = reclutas.filter(recluta=>{
+                let dateIngreso = new Date(recluta.fechaIngreso).getHours();
+                let actual = new Date().getHours();
+                let HorasEn2Meses = 24*60
+                if(actual - dateIngreso > HorasEn2Meses){
+                    return recluta
+                }
+            })
+            console.log(filtrado);
+        })
+
+
+    }catch(error){
+
+    }
+
 }
